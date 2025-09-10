@@ -1,0 +1,322 @@
+@import url("variable.css");
+/* Navbar */
+/* Navbar */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+/* Logo Box */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(226, 225, 225, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.logo svg {
+  width: 50px;
+  height: auto;
+  color: var(--fc-primary);
+}
+
+/* Nav Links Box */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 10px 20px;
+  background: rgba(226, 225, 225, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+nav ul li a {
+  text-decoration: none;
+  color: var(--fc-primary);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--fc-accent);
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 75px; /* tighter width */
+  height: 65px; /* tighter height */
+  cursor: pointer;
+
+  z-index: 101;
+
+  /* Glass / Blur effect */
+  background: rgba(226, 225, 225, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+
+  padding: 10px; /* hug the bars */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger bars */
+.hamburger span {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: var(--fc-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate into X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: var(--fc-primary);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate into perfect X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px) translateX(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0; /* hide middle line */
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px) translateX(8px);
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(135px, auto);
+  grid-auto-flow: dense;
+  gap: 10px;
+
+  padding: 100px 60px 80px 60px;
+  box-sizing: border-box;
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 99;
+}
+
+.nav-overlay ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: contents;
+}
+
+.nav-overlay ul li {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.nav-overlay ul li.wide {
+  grid-column: span 2; /* makes item stretch horizontally */
+}
+
+.nav-overlay ul li.tall {
+  grid-row: span 2; /* makes item stretch vertically */
+}
+
+.nav-overlay ul li.large {
+  grid-column: span 2;
+  grid-row: span 2; /* 2x2 big card */
+}
+
+.nav-overlay ul li a,
+.nav-overlay ul li button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(213, 212, 212, 0.6);
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--fc-primary);
+  backdrop-filter: blur(14px);
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: var(--fw-normal);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-overlay ul li a:hover,
+.nav-overlay ul li button:hover {
+  background: rgba(226, 225, 225, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: var(--fc-accent);
+  transform: translateY(-5px);
+}
+
+.nav-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Base pill button */
+.contact-pill {
+  position: relative;
+  display: inline-block;
+  background-color: var(--fc-accent);
+  color: var(--fc-primary);
+  font-size: var(--fs-xs);
+  border-radius: 50px;
+  padding: 16px 24px;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-pill span {
+  display: inline-block;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover style */
+.contact-pill:hover {
+  background-color: var(--fc-primary);
+}
+
+/* Second text for hover (COPY MAIL?) */
+.contact-pill::after {
+  content: "Copy mail";
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(20px);
+  color: var(--fc-accent);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xs);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Animate swap on hover */
+.contact-pill:hover span {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.contact-pill:hover::after {
+  transform: translate(-50%, -50%) translateY(0);
+  opacity: 1;
+}
+
+.contact-btn span {
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* COPIED! state */
+.contact-pill.copied {
+  background-color: var(--fc-accent);
+}
+
+.contact-pill.copied::after {
+  content: "Copied!";
+  width: 100%;
+  color: var(--fc-primary);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semi);
+  transform: translate(-50%, -50%) translateY(0);
+  opacity: 1;
+}
+
+.contact-pill.copied span {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+
+/* Mobile view */
+@media screen and (min-width: 481px) {
+  .nav-overlay {
+    display: none !important;
+  }
+
+  nav ul.nav-links {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul.nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-overlay {
+    padding: 100px 20px 80px;
+  }
+}

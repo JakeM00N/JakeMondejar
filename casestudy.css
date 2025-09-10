@@ -1,0 +1,155 @@
+@import url("variable.css");
+.container {
+  width: 100%;
+  
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-study {
+
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  
+  max-width: 100%;
+}
+.case-header {
+  display: flex;
+  color: var(--fc-primary);
+  font-size: var(--fs-sm);
+  
+  flex-direction: column;
+  align-items: center;
+}
+.case-header h1 {
+  font-weight: var(--fw-black);
+
+  margin: 150px 0px 40px;
+  text-align: center;
+}
+.case-summary p {
+  max-width: 600px;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semi);
+}
+
+.case-text {
+  display: flex;
+  background: var(--fc-bg2);
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+.case-meta {
+  display: flex;
+  height: auto;
+  
+  width: 100%;
+  padding: 15px ;
+  margin-bottom: 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.case-summary {
+  font-weight: var(--fw-black);
+  flex: 2;
+  color: var(--fc-primary);
+}
+
+.case-year {
+  color: var(--fc-primary);
+
+  text-align: right;
+  flex: 1;
+}
+.case-details {
+  flex: 1;
+  min-width: 200px;
+}
+.case-summary h3,
+.case-details h3,
+.case-year h3 {
+  color: var(--fc-bg3);
+  font-weight: var(--fw-semi); /* makes it semi-bold */
+  font-size: var(--fs-xs);
+  margin: 0.5rem 0;
+}
+
+.case-year p {
+  font-weight: var(--fw-black);
+  font-size: var(--fs-xl);
+}
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: var(--fs-xm);
+  text-transform: uppercase;
+}
+.main-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.case-main-video {
+  position: relative;
+  width: 100%;
+  
+  margin: 0 auto;    /* center it */
+  aspect-ratio: 16 / 9;
+}
+
+.case-main-video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; /* optional for rounded corners */
+}
+
+
+.gallery-item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .case-text {
+    margin-bottom: 70px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .case-year {
+    text-align: left;
+  }
+  .case-summary p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .case-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

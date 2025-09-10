@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jake Mondejar Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 392.52 220.79"
+        >
+          <polygon
+            fill="currentColor"
+            points="171.81 0 171.81 220.8 0 220.8 0 122.08 45.88 122.08 45.88 174.63 125.93 174.63 125.93 0 171.81 0"
+          />
+          <rect fill="currentColor" width="116.72" height="52.54" />
+          <rect fill="currentColor" x="346.65" width="45.88" height="220.79" />
+          <polygon
+            fill="currentColor"
+            points="337.84 .32 337.84 65.61 259.01 144.95 258.99 144.95 180.15 65.61 180.15 .32 259.01 79.68 337.84 .32"
+          />
+        </svg>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#work">PROJECTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1eFo1z1yqtAFys5_veBnpiP-s339rltyW/view?usp=drive_link"
+            target="_blank"
+            >RESUME</a
+          >
+        </li>
+        <li>
+          <button class="contact-pill" onclick="copyEmail(this)">
+            <span>Get in touch</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Overlay for mobile menu -->
+    <div class="nav-overlay">
+      <ul>
+        <!-- Main links -->
+        <li class="wide"><a href="#work">PROJECTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li class="tall">
+          <a
+            href="https://drive.google.com/file/d/1eFo1z1yqtAFys5_veBnpiP-s339rltyW/view?usp=drive_link"
+            target="_blank"
+          >
+            RESUME
+          </a>
+        </li>
+        <li>
+          <button class="contact-pill" onclick="copyEmail(this)">
+            <span>Get in touch</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="video/wave.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-intro-sec">
+          VIDEO EDITOR, GRAPHIC DESIGNER, MOTION GRAPHIC DESIGNER
+        </p>
+        <h2 class="hero-intro">JAKE MONDEJAR</h2>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <!-- Section title -->
+      <div class="section-header">
+        <h2>ABOUT ME</h2>
+      </div>
+
+      <div class="about-container">
+        
+        <div class="about-text">
+          <p>
+            Hi, I’m Jake Mondejar, a video editor and graphic designer from the
+            Philippines. I create impactful videos, graphics, and motion designs
+            that capture attention and tell compelling stories. With a focus on
+            creativity and detail, I craft content that elevates brands, engages
+            audiences, and brings ideas to life.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="images/portrait.jpg" alt="Jake Mondejar" />
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker">
+      <div class="ticker__wrap">
+        <span>PROJECTS</span>
+        <span class="stroke">PROJECTS</span>
+        <span>PROJECTS</span>
+        <span class="stroke">PROJECTS</span>
+        <span>PROJECTS</span>
+        <span class="stroke">PROJECTS</span>
+        <span>PROJECTS</span>
+        <span class="stroke">PROJECTS</span>
+        <span>PROJECTS</span>
+        <span class="stroke">PROJECTS</span>
+      </div>
+    </div>
+
+    <section id="work" class="projects-section">
+      <!-- Projects Grid -->
+      <div class="projects">
+        <a href="casestudy1.html" class="project-card">
+          <div class="project-image-cont">
+            <img
+              src="images/Project1.png"
+              alt="Project 1"
+              class="project-image"
+            />
+          </div>
+          <div class="project-footer">
+            <div class="project-name">Saint Joseph Cathedral Podcast Intro</div>
+            <div class="project-tag-cont">
+              <div class="project-tag">MOTION GRAPHICS</div>
+              <div class="project-tag">2025</div>
+            </div>
+          </div>
+        </a>
+
+      
+        <a href="casestudy2.html" class="project-card">
+            <div class="project-image-cont">
+              <img
+                src="images/Project2.png"
+                alt="Project 2"
+                class="project-image"
+              />
+            </div>
+            <div class="project-footer">
+              <div class="project-name">FSUU CSP Promotional Video</div>
+              <div class="project-tag-cont">
+                <div class="project-tag">VIDEO EDITING</div>
+                <div class="project-tag">2025</div>
+              </div>
+            </div>
+          </a>  
+
+       
+      </div>
+
+
+       
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 392.52 220.79"
+        >
+          <polygon
+            fill="currentColor"
+            points="171.81 0 171.81 220.8 0 220.8 0 122.08 45.88 122.08 45.88 174.63 125.93 174.63 125.93 0 171.81 0"
+          />
+          <rect fill="currentColor" width="116.72" height="52.54" />
+          <rect fill="currentColor" x="346.65" width="45.88" height="220.79" />
+          <polygon
+            fill="currentColor"
+            points="337.84 .32 337.84 65.61 259.01 144.95 258.99 144.95 180.15 65.61 180.15 .32 259.01 79.68 337.84 .32"
+          />
+        </svg>
+      </div>
+
+      <div class="footer-container">
+        <div  class="footer-text-box big">Design and code by Jake Mondejar</div>
+        <div class="footer-text-box big">Thanks for coming</div>
+        <a href="https://www.behance.net/JakeMon" target="_blank" class="footer-card medium">Behence</a>
+        <a
+          href="https://linkedin.com/in/jake-mondejar-209846377"
+          target="_blank"
+          class="footer-card medium"
+          >LinkedIn</a
+        >
+        <a
+          href="https://x.com/JakeMonde509"
+          target="_blank"
+          class="footer-card medium"
+          >X(Twitter)</a
+        >
+        <a
+          href="https://youtube.com/channel/UCeF3kRRUGcDLRSmgX6LKFPw"
+          target="_blank"
+          class="footer-card medium"
+          >YouTube</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
