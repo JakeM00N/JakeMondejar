@@ -46,7 +46,7 @@ window.addEventListener('resize', () => {
   }
 });
 function copyEmail(btn) {
-  const email = "yourgmail@gmail.com"; // replace with your Gmail
+  const email = "jake.mondejar2320@gmail.com"; // replace with your Gmail
   navigator.clipboard.writeText(email).then(() => {
     btn.classList.add("copied");
 
