@@ -263,7 +263,7 @@ body::-webkit-scrollbar {
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   padding: 20px;
-  color: var(--fc-secondary);
+  color: var(--fc-primary);
   font-size: var(--fs-sm);
   font-weight: var(--fw-semi);
   text-decoration: none;
@@ -277,7 +277,7 @@ body::-webkit-scrollbar {
 .footer-card:hover {
   background: rgba(226, 225, 225, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.7);
-  color: var(--fc-secondary);
+  color: var(--fc-accent);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   transform: translateY(-4px);
