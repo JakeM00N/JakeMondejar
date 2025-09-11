@@ -9,35 +9,44 @@
     <link rel="stylesheet" href="project.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
     <nav>
-      <div class="logo">
-        <svg
-          id="Layer_1"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 392.52 220.79"
-        >
-          <polygon
-            fill="currentColor"
-            points="171.81 0 171.81 220.8 0 220.8 0 122.08 45.88 122.08 45.88 174.63 125.93 174.63 125.93 0 171.81 0"
-          />
-          <rect fill="currentColor" width="116.72" height="52.54" />
-          <rect fill="currentColor" x="346.65" width="45.88" height="220.79" />
-          <polygon
-            fill="currentColor"
-            points="337.84 .32 337.84 65.61 259.01 144.95 258.99 144.95 180.15 65.61 180.15 .32 259.01 79.68 337.84 .32"
-          />
-        </svg>
-      </div>
+      <a href="index.html">
+        <div class="logo">
+          <svg
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 392.52 220.79"
+          >
+            <polygon
+              fill="currentColor"
+              points="171.81 0 171.81 220.8 0 220.8 0 122.08 45.88 122.08 45.88 174.63 125.93 174.63 125.93 0 171.81 0"
+            />
+            <rect fill="currentColor" width="116.72" height="52.54" />
+            <rect
+              fill="currentColor"
+              x="346.65"
+              width="45.88"
+              height="220.79"
+            />
+            <polygon
+              fill="currentColor"
+              points="337.84 .32 337.84 65.61 259.01 144.95 258.99 144.95 180.15 65.61 180.15 .32 259.01 79.68 337.84 .32"
+            />
+          </svg>
+        </div>
+      </a>
 
       <ul class="nav-links">
-        <li><a href="#work">PROJECTS</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="index.html#work">PROJECTS</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
         <li>
           <a
             href="https://drive.google.com/file/d/1eFo1z1yqtAFys5_veBnpiP-s339rltyW/view?usp=drive_link"
@@ -46,9 +55,11 @@
           >
         </li>
         <li>
-          <button class="contact-pill" onclick="copyEmail(this)">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jake.mondejar@gmail.com" 
+            target="_blank" 
+            class="contact-pill">
             <span>Get in touch</span>
-          </button>
+          </a>
         </li>
       </ul>
 
@@ -60,24 +71,29 @@
       </div>
     </nav>
 
+
+
+
     <!-- Overlay for mobile menu -->
     <div class="nav-overlay">
       <ul>
         <!-- Main links -->
-        <li class="wide"><a href="#work">PROJECTS</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li class="wide"><a href="#work">Projects</a></li>
+        <li><a href="#about">About</a></li>
         <li class="tall">
           <a
             href="https://drive.google.com/file/d/1eFo1z1yqtAFys5_veBnpiP-s339rltyW/view?usp=drive_link"
             target="_blank"
           >
-            RESUME
+            Resume
           </a>
         </li>
         <li>
-          <button class="contact-pill" onclick="copyEmail(this)">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jake.mondejar@gmail.com" 
+            target="_blank" 
+            class="wide">
             <span>Get in touch</span>
-          </button>
+          </a>
         </li>
       </ul>
     </div>
@@ -92,10 +108,11 @@
       </div>
 
       <div class="hero-content">
+        
         <p class="hero-intro-sec">
-          VIDEO EDITOR, GRAPHIC DESIGNER, MOTION GRAPHIC DESIGNER
+          Bringing Ideas to Life Through Design, Motion, and Media
         </p>
-        <h2 class="hero-intro">JAKE MONDEJAR</h2>
+        
       </div>
     </section>
 
@@ -124,22 +141,12 @@
       </div>
     </section>
 
-    <div class="ticker">
-      <div class="ticker__wrap">
-        <span>PROJECTS</span>
-        <span class="stroke">PROJECTS</span>
-        <span>PROJECTS</span>
-        <span class="stroke">PROJECTS</span>
-        <span>PROJECTS</span>
-        <span class="stroke">PROJECTS</span>
-        <span>PROJECTS</span>
-        <span class="stroke">PROJECTS</span>
-        <span>PROJECTS</span>
-        <span class="stroke">PROJECTS</span>
-      </div>
-    </div>
+   
 
     <section id="work" class="projects-section">
+      <div class="section-header">
+        <h2>PROJECTS</h2>
+      </div>
       <!-- Projects Grid -->
       <div class="projects">
         <a href="casestudy1.html" class="project-card">

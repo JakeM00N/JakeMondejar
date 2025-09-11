@@ -10,6 +10,7 @@
 
 /* Global Styles */
 body {
+  font-family: 'Domine', serif;
   font-family: "Manrope", sans-serif;
   background: var(--fc-bg);
   color: var(--fc-primary);
@@ -26,7 +27,7 @@ body::-webkit-scrollbar {
 
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -69,8 +70,8 @@ body::-webkit-scrollbar {
 /* Intro paragraph */
 .hero-intro {
   color: var(--fc-primary);
-  font-weight: var(--fw-black);
-  font-size: var(--fs-max);
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-sm);
   width: 100%;
   text-align: center;
   
@@ -78,62 +79,50 @@ body::-webkit-scrollbar {
 }
 
 .hero-intro-sec {
-  font-weight: var(--fw-semi);
-  font-size: var(--fs-md);
-  color: var(--fc-primary);
-  width: 100%;
+  font-family: 'Domine', serif;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xxl);
+  color: var(--fc-accent);
+  width: 1200px;
   text-align: center;
 }
 
 /* Tablets */
 @media (max-width: 1024px) {
 
-
-  .hero-content {
-    align-items: start;
-
+  .hero-intro-sec {
+    
+    width: 900px;
+ 
   }
+  
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   
-  .hero-intro{
-    text-align: left;
-  }
-  .hero-intro-sec {
-    text-align: left;
-    width: 500px;
-    
-    
+  
+.hero-intro {
+    font-size: var(--fs-sm);
   }
 
+  .hero-intro-sec {
+    
+    width: 350px;
+    font-size: var(--fs-xl);
+  }
   
  
-  .hero-content {
-    align-items: start;
-
-  }
+  
 }
 
 /* Small mobile */
 @media (max-width: 480px) {
-  .hero-intro {
-    font-size: var(--fs-xxxl);
-  }
-
-  .hero-intro-sec {
-    text-align: left;
-    width: 350px;
-    font-size: var(--fs-md);
-  }
+  
 
   
  
-  .hero-content {
-    align-items: start;
-   
-  }
+  
 }
 
 /* About Section */
@@ -207,7 +196,7 @@ body::-webkit-scrollbar {
 
   .about-text {
  
-    text-align: justify;
+    text-align: left;
   }
   .about-text p {
     margin-bottom: 15px;
