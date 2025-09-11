@@ -10,7 +10,7 @@
 
 /* Global Styles */
 body {
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   font-family: "Manrope", sans-serif;
   background: var(--fc-bg);
   color: var(--fc-txt);
@@ -61,10 +61,9 @@ body::-webkit-scrollbar {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  
+
   z-index: 2;
   padding: 10px 20px;
-  
 }
 
 /* Intro paragraph */
@@ -74,12 +73,10 @@ body::-webkit-scrollbar {
   font-size: var(--fs-sm);
   width: 100%;
   text-align: center;
-  
-  
 }
 
 .hero-intro-sec {
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   font-weight: var(--fw-bold);
   font-size: var(--fs-xxl);
   color: var(--fc-txt);
@@ -89,62 +86,45 @@ body::-webkit-scrollbar {
 
 /* Tablets */
 @media (max-width: 1024px) {
-
   .hero-intro-sec {
-    
     width: 900px;
- 
   }
-  
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  
-  
-.hero-intro {
+  .hero-intro {
     font-size: var(--fs-sm);
   }
 
   .hero-intro-sec {
-    
     width: 350px;
     font-size: var(--fs-xl);
   }
-  
- 
-  
 }
 
 /* Small mobile */
 @media (max-width: 480px) {
-  
-
-  
- 
-  
 }
 
 /* About Section */
 .about-section {
   width: 100%;
   min-height: 100vh;
-  
+
   align-items: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-/* Use flexbox for text left / image right */
 .about-container {
   display: flex;
   justify-content: space-between;
   align-items: start;
   gap: 20px;
-  background: var(--fc-bg2);
-  margin: 10px;
-  padding: 20px;
+
+  padding: 15px;
   border-radius: 15px;
   min-height: 100vh;
 }
@@ -158,7 +138,7 @@ body::-webkit-scrollbar {
 .about-text p {
   color: var(--fc-txt);
   font-size: var(--fs-lg);
-  
+
   font-weight: var(--fw-semi);
   margin-bottom: 15px;
 }
@@ -169,19 +149,20 @@ body::-webkit-scrollbar {
   color: var(--fc-txt);
   margin: 20px 10px 10px;
   display: inline-block;
-  
+  font-family: "Domine", serif;
   border-radius: 50px;
 }
 
 .about-image {
   flex: 1;
-  text-align: right;
 }
 
 .about-image img {
   max-width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
   height: auto;
-  border-radius: 10px; /* optional */
+  border-radius: 10px;
 }
 
 /* Mobile Responsive */
@@ -191,18 +172,15 @@ body::-webkit-scrollbar {
     text-align: center;
     gap: 0px;
     padding: 15px;
-    
   }
 
   .about-text {
- 
-    text-align: left;
+    text-align: center;
   }
   .about-text p {
     margin-bottom: 15px;
     font-size: var(--fs-md);
   }
-  
 }
 
 .footer {
@@ -211,7 +189,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* for absolute positioning */
+  position: relative;
   padding: 0;
   box-sizing: border-box;
 }
@@ -236,12 +214,11 @@ body::-webkit-scrollbar {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  
   height: auto;
 
   pointer-events: none;
   z-index: 0;
-  color: var(--fc-txt); 
+  color: var(--fc-txt);
 }
 /* Shared card style */
 .footer-card,
@@ -288,8 +265,5 @@ body::-webkit-scrollbar {
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
-    
   }
 }
-
-

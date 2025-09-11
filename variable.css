@@ -1,32 +1,31 @@
 :root {
   /* Responsive Font Sizes */
-  --fs-xxs: clamp(0.75rem, 0.8vw, 0.875rem);  /* ~12px → 14px */
-  --fs-xs:  clamp(0.875rem, 1vw, 1rem);       /* ~14px → 16px */
-  --fs-sm:  clamp(1rem, 1.2vw, 1.25rem);      /* ~16px → 20px */
-  --fs-md:  clamp(1.5rem, 2.5vw, 2rem);       /* ~24px → 32px */
-  --fs-lg:  clamp(2rem, 4vw, 3rem);           /* ~32px → 48px */
-  --fs-xl:  clamp(2.5rem, 5vw, 4rem);         /* ~40px → 64px */
-  --fs-xxl: clamp(3rem, 6vw, 6rem);           /* ~48px → 96px */
-  --fs-xxxl: clamp(4rem, 8vw, 8rem);          /* ~64px → 128px */
-  --fs-max: clamp(5rem, 10vw, 10rem);         /* ~80px → 160px */
+  --fs-xxs: clamp(0.75rem, 0.8vw, 0.875rem); /* ~12px → 14px */
+  --fs-xs: clamp(0.875rem, 1vw, 1rem); /* ~14px → 16px */
+  --fs-sm: clamp(1rem, 1.2vw, 1.25rem); /* ~16px → 20px */
+  --fs-md: clamp(1.5rem, 2.5vw, 2rem); /* ~24px → 32px */
+  --fs-lg: clamp(2rem, 4vw, 3rem); /* ~32px → 48px */
+  --fs-xl: clamp(2.5rem, 5vw, 4rem); /* ~40px → 64px */
+  --fs-xxl: clamp(3rem, 6vw, 6rem); /* ~48px → 96px */
+  --fs-xxxl: clamp(4rem, 8vw, 8rem); /* ~64px → 128px */
+  --fs-max: clamp(5rem, 10vw, 10rem); /* ~80px → 160px */
 
   /* Font Weight */
   --fw-thin: 100;
   --fw-normal: 400;
-  --fw-semi: 600;   /* Semi-Bold */
+  --fw-semi: 600;
   --fw-bold: 700;
   --fw-black: 800;
 
   /*Colors */
-  --fc-primary: #B6B09F;
-  --fc-secondary: #EAE4D5;
+  --fc-primary: #b6b09f;
+  --fc-secondary: #eae4d5;
   --fc-accent: #4d6cc7;
 
-  --fc-txt: #F2F2F2;
+  --fc-txt: #f2f2f2;
   --fc-txt2: #d6d6d6;
-  
-  
+
   --fc-bg: #000000;
   --fc-bg2: #090909;
-  --fc-bg3: #D8D9DA;
+  --fc-bg3: #d8d9da;
 }

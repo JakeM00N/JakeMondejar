@@ -6,7 +6,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--fc-accent);
+  color: var(--fc-secondary);
 }
 
 /* Hamburger Button */
@@ -68,8 +68,8 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 75px; /* tighter width */
-  height: 65px; /* tighter height */
+  width: 75px; 
+  height: 65px; 
   cursor: pointer;
 
   z-index: 101;
@@ -162,16 +162,16 @@ nav ul li a:hover {
 }
 
 .nav-overlay ul li.wide {
-  grid-column: span 2; /* makes item stretch horizontally */
+  grid-column: span 2; 
 }
 
 .nav-overlay ul li.tall {
-  grid-row: span 2; /* makes item stretch vertically */
+  grid-row: span 2; 
 }
 
 .nav-overlay ul li.large {
   grid-column: span 2;
-  grid-row: span 2; /* 2x2 big card */
+  grid-row: span 2; 
 }
 
 .nav-overlay ul li a {
@@ -212,8 +212,8 @@ nav ul li a:hover {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
-  background: var(--fc-primary);
-  color: var(--fc-bg);
+  background: var(--fc-accent);
+  color: var(--fc-txt);
   font-weight: var(--fw-bold);
   text-decoration: none;
   position: relative;
@@ -237,12 +237,12 @@ nav ul li a:hover {
   transform: translateY(150%);
   text-align: center;
   font-weight: 600;
-  color: var(--fc-txt);
+  color: var(--fc-bg);
   transition: transform 0.3s ease;
 }
 
 .contact-pill:hover {
-  background: var(--fc-accent);
+  background: var(--fc-secondary);
 
 
 }
