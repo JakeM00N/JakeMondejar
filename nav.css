@@ -1,10 +1,10 @@
 @import url("variable.css");
 /* Navbar */
-/* Navbar */
+
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* logo left, links right */
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   position: fixed;
@@ -30,7 +30,7 @@ nav {
 .logo svg {
   width: 50px;
   height: auto;
-  color: var(--fc-primary);
+  color: var(--fc-txt);
 }
 
 /* Nav Links Box */
@@ -51,7 +51,7 @@ nav ul {
 /* Links */
 nav ul li a {
   text-decoration: none;
-  color: var(--fc-primary);
+  color: var(--fc-txt);
   font-size: var(--fs-xs);
   font-weight: var(--fw-normal);
   transition: color 0.3s ease;
@@ -85,7 +85,7 @@ nav ul li a:hover {
   display: block;
   height: 5px;
   width: 100%;
-  background-color: var(--fc-primary);
+  background-color: var(--fc-txt);
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -105,7 +105,7 @@ nav ul li a:hover {
   display: block;
   height: 3px;
   width: 30px;
-  background-color: var(--fc-primary);
+  background-color: var(--fc-txt);
   border-radius: 3px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -183,7 +183,7 @@ nav ul li a:hover {
   background-color: rgba(213, 212, 212, 0.6);
   border-radius: 20px;
   padding: 20px;
-  color: var(--fc-primary);
+  color: var(--fc-txt);
   backdrop-filter: blur(14px);
   font-size: clamp(1rem, 2vw, 2rem);
   font-weight: var(--fw-normal);
@@ -212,8 +212,8 @@ nav ul li a:hover {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
-  background: var(--fc-accent);
-  color: var(--fc-primary);
+  background: var(--fc-primary);
+  color: var(--fc-bg);
   font-weight: var(--fw-bold);
   text-decoration: none;
   position: relative;
@@ -237,13 +237,14 @@ nav ul li a:hover {
   transform: translateY(150%);
   text-align: center;
   font-weight: 600;
-  color: var(--fc-accent);
+  color: var(--fc-txt);
   transition: transform 0.3s ease;
 }
 
 .contact-pill:hover {
-  background: var(--fc-primary);
-  transform: translateY(-2px);
+  background: var(--fc-accent);
+
+
 }
 
 /* animate text swap */

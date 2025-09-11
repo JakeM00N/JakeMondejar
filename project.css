@@ -14,12 +14,7 @@
 }
 
 
-/* Horizontal Line */
-.section-line {
-  height: 1px;
-  background-color: var(--fc-primary);
-  margin: 0 20px 30px 20px;
-}
+
 
 /* Project Card */
 .project-card {
@@ -70,7 +65,7 @@
 .project-name {
   font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
-  color: var(--fc-primary);
+  color: var(--fc-txt);
 }
 
 .project-tag-cont {
@@ -80,7 +75,7 @@
 }
 
 .project-tag {
-  color: var(--fc-secondary);
+  color: var(--fc-txt2);
   text-align: right;
   font-size: var(--fs-sm);
   font-weight: var(--fw-bold);

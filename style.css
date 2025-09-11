@@ -13,7 +13,7 @@ body {
   font-family: 'Domine', serif;
   font-family: "Manrope", sans-serif;
   background: var(--fc-bg);
-  color: var(--fc-primary);
+  color: var(--fc-txt);
 }
 
 body::-webkit-scrollbar {
@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .video-wrapper:hover .contact-circle {
@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 
 /* Intro paragraph */
 .hero-intro {
-  color: var(--fc-primary);
+  color: var(--fc-txt);
   font-weight: var(--fw-normal);
   font-size: var(--fs-sm);
   width: 100%;
@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
   font-family: 'Domine', serif;
   font-weight: var(--fw-bold);
   font-size: var(--fs-xxl);
-  color: var(--fc-accent);
+  color: var(--fc-txt);
   width: 1200px;
   text-align: center;
 }
@@ -144,7 +144,7 @@ body::-webkit-scrollbar {
   gap: 20px;
   background: var(--fc-bg2);
   margin: 10px;
-  padding: 40px;
+  padding: 20px;
   border-radius: 15px;
   min-height: 100vh;
 }
@@ -156,7 +156,7 @@ body::-webkit-scrollbar {
 }
 
 .about-text p {
-  color: var(--fc-primary);
+  color: var(--fc-txt);
   font-size: var(--fs-lg);
   
   font-weight: var(--fw-semi);
@@ -166,7 +166,7 @@ body::-webkit-scrollbar {
 .section-header h2 {
   font-size: var(--fs-xxl);
   font-weight: var(--fw-black);
-  color: var(--fc-secondary);
+  color: var(--fc-txt);
   margin: 20px 10px 10px;
   display: inline-block;
   
@@ -241,7 +241,7 @@ body::-webkit-scrollbar {
 
   pointer-events: none;
   z-index: 0;
-  color: var(--fc-secondary); 
+  color: var(--fc-txt); 
 }
 /* Shared card style */
 .footer-card,
@@ -252,7 +252,7 @@ body::-webkit-scrollbar {
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   padding: 20px;
-  color: var(--fc-primary);
+  color: var(--fc-txt);
   font-size: var(--fs-sm);
   font-weight: var(--fw-semi);
   text-decoration: none;
@@ -292,44 +292,4 @@ body::-webkit-scrollbar {
   }
 }
 
-/* Ticker */
-.ticker {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  font-weight: var(--fw-black);
-  font-size: var(--fs-max);
-  color: var(--fc-secondary);
 
-  margin: 20px 0px 20px;
-  border-bottom: 1px solid var(--fc-secondary);
-  border-top: 1px solid var(--fc-secondary);
-}
-
-.ticker__wrap {
-  display: inline-block;
-  animation: scroll 20s linear infinite;
-}
-
-/* Base ticker text */
-.ticker__wrap span {
-  display: inline-block;
-  margin-right: 50px;
-}
-
-/* Stroked text */
-.ticker__wrap span.stroke {
-  color: var(--fc-secondary);
-  
-  font-weight: var(--fw-black);
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}

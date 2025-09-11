@@ -17,14 +17,16 @@
   --fw-bold: 700;
   --fw-black: 800;
 
-  /* Font Colors */
-  --fc-primary: #FFF6E0;
-  --fc-secondary: #D8D9DA;
-  --fc-txt: #61677A;
-  --fc-accent: #faa916;
+  /*Colors */
+  --fc-primary: #B6B09F;
+  --fc-secondary: #EAE4D5;
+  --fc-accent: #4d6cc7;
+
+  --fc-txt: #F2F2F2;
+  --fc-txt2: #d6d6d6;
   
-  /* Background Colors */
-  --fc-bg: #272829;
-  --fc-bg2: #1b1b1e;
+  
+  --fc-bg: #000000;
+  --fc-bg2: #090909;
   --fc-bg3: #D8D9DA;
 }
