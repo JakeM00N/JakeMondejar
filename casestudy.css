@@ -48,7 +48,7 @@
 .case-meta {
   display: flex;
   height: auto;
-
+  
   width: 100%;
   padding: 15px;
   margin-bottom: 15px;
@@ -93,7 +93,7 @@
 }
 
 .tag {
-  background: var(--fc-bg);
+  background: var(--fc-bg3);
   color: var(--fc-txt);
   padding: 10px;
   border-radius: 10px;

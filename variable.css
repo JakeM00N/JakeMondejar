@@ -17,15 +17,27 @@
   --fw-bold: 700;
   --fw-black: 800;
 
-  /*Colors */
-  --fc-primary: #eae4d5;
-  --fc-secondary: #b6b09f;
-  --fc-accent: #4d6cc7;
+  /*nav Colors  */
+    --fc-title: #1b1b1b;
+   /*nav Colors  */
+   --fc-nav: #1b1b1b;
 
-  --fc-txt: #f2f2f2;
+  /*hero Colors  */
+   --fc-hero: #1b1b1b;
+ 
+
+  /*Colors */
+  --fc-primary: #2D336B;
+  --fc-secondary: #7886C7;
+  --fc-accent: #A9B5DF;
+
+  --fc-txt: #FFF2F2;
   --fc-txt2: #d6d6d6;
 
-  --fc-bg: #000000;
-  --fc-bg2: #090909;
-  --fc-bg3: #d8d9da;
+  --fc-bg: #FFF2F2;
+  --fc-bg2: #151515;
+  --fc-bg3: #2a2a2a;
+ 
+  --fc-op: rgba(21, 21, 21, 0.6);
+   --fc-op2: rgba(184, 184, 184, 0.7);
 }

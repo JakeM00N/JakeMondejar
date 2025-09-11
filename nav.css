@@ -14,24 +14,17 @@ nav {
   transition: top 0.3s;
 }
 
-/* Logo Box */
+
+
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-  
-  padding: 20px 20px;
-  
-  
-  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--fc-hero);
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
-.logo svg {
-  width: 50px;
-  height: auto;
-  color: var(--fc-txt);
-}
 
 /* Nav Links Box */
 nav ul {
@@ -51,9 +44,9 @@ nav ul {
 /* Links */
 nav ul li a {
   text-decoration: none;
-  color: var(--fc-txt);
+  color: var(--fc-nav);
   font-size: var(--fs-xs);
-  font-weight: var(--fw-normal);
+  font-weight: var(--fw-semi);
   transition: color 0.3s ease;
 }
 
@@ -85,7 +78,7 @@ nav ul li a:hover {
   display: block;
   height: 5px;
   width: 100%;
-  background-color: var(--fc-txt);
+ 
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -105,7 +98,7 @@ nav ul li a:hover {
   display: block;
   height: 3px;
   width: 30px;
-  background-color: var(--fc-txt);
+  background-color: var(--fc-hero);
   border-radius: 3px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -180,7 +173,7 @@ nav ul li a:hover {
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  background-color: rgba(213, 212, 212, 0.6);
+  background-color: var(--fc-op);
   border-radius: 20px;
   padding: 20px;
   color: var(--fc-txt);
@@ -190,13 +183,13 @@ nav ul li a:hover {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--fc-op2);
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .nav-overlay ul li a:hover,
 .nav-overlay ul li button:hover {
-  background: rgba(226, 225, 225, 0.6);
+ 
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   color: var(--fc-accent);
@@ -212,7 +205,7 @@ nav ul li a:hover {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
-  background: var(--fc-accent);
+  background: var(--fc-primary);
   color: var(--fc-txt);
   font-weight: var(--fw-bold);
   text-decoration: none;
@@ -237,12 +230,14 @@ nav ul li a:hover {
   transform: translateY(150%);
   text-align: center;
   font-weight: 600;
-  color: var(--fc-bg);
+  color: var(--fc-primary);
   transition: transform 0.3s ease;
 }
 
 .contact-pill:hover {
-  background: var(--fc-secondary);
+  background: var(--fc-accent);
+
+  opacity: 10;
 
 
 }
@@ -258,14 +253,14 @@ nav ul li a:hover {
 
 .contact-pill:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
 }
 
 
 
 
 /* Mobile view */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 789px) {
   .nav-overlay {
     display: none !important;
   }
@@ -275,7 +270,7 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 788px) {
   nav ul.nav-links {
     display: none;
   }
