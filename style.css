@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
   font-size: var(--fs-xxl);
   font-weight: var(--fw-black);
   color: var(--fc-txt);
-  margin: 20px 10px 10px;
+  margin: 20px 15px 10px;
   display: inline-block;
   font-family: "Domine", serif;
   border-radius: 50px;
