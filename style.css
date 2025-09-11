@@ -105,6 +105,10 @@ body::-webkit-scrollbar {
 
 /* Small mobile */
 @media (max-width: 480px) {
+  .hero-intro-sec {
+    width: 400px;
+   
+  }
 }
 
 /* About Section */
