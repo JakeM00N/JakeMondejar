@@ -116,11 +116,12 @@ body::-webkit-scrollbar {
   width: 100vw;
   gap: 15px;
   padding: 15px;
-
+  
   display: flex;
   background: var(--fc-bg2);
   flex-direction: column;
   justify-content: center;
+  align-content: center;
 }
 
 .about-container {
@@ -128,7 +129,7 @@ body::-webkit-scrollbar {
   justify-content: start;
   align-items: start;
   gap: 15px;
-   
+
  
   border-radius: 15px;
   min-height: fit-content;
@@ -142,7 +143,7 @@ body::-webkit-scrollbar {
 
 .about-text p {
   color: var(--fc-txt);
-  font-size: var(--fs-md);
+  font-size: var(--fs-lg);
 
   font-weight: var(--fw-semi);
   margin-bottom: 15px;
@@ -177,7 +178,22 @@ body::-webkit-scrollbar {
   height: auto;
   border-radius: 15px;
 }
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column-reverse;
+    
+   
 
+
+  }
+
+  
+  .about-text p {
+    margin-bottom: 15px;
+    font-size: var(--fs-md);
+  }
+}
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .about-container {
